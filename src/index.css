@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryBg: #04040c;
+  --font-mon: "Montserrat" serif;
+  --color-secondtext: #f0f0f0;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  @apply text-secondtext;
+}
+
+@layer components {
+  .navItem {
+    @apply font-mon text-[19px] font-medium text-secondtext relative;
+  }
+  .activeNavItem {
+    @apply text-[#BC61F3]  after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-2 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full;
+  }
+}
+
+@utility btnlinear {
+  background: rgb(92, 67, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(92, 67, 246, 1) 0%,
+    rgba(188, 97, 243, 1) 100%
+  );
+}
+
+@utility borderlinear {
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    180deg,
+    rgba(92, 67, 246, 1) 0%,
+    rgba(188, 97, 243, 1) 100%
+  );
+  border-image-slice: 1;
+}
+
+@layer utilities {
+  .banner-heading {
+    background-image: url("./assets/images/textBg.png");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
