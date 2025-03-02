@@ -5,6 +5,7 @@ import Marketplace from "./Pages/Marketplace";
 import Artist from "./Pages/Artist";
 import Community from "./Pages/Community"
 
+
 function App() {
   return (
     <Routes>

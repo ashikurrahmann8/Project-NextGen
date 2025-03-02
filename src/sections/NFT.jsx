@@ -3,7 +3,7 @@ import Flex from "../components/Flex";
 import SliderComponent from "../components/Slider";
 import Title from "../components/Title";
 import nft1Img from "../assets/images/nft1.png";
-
+import React from "react";
 const NFT = () => {
   return (
     <section className="relative z-50">
@@ -18,7 +18,7 @@ const NFT = () => {
             infinite: true,
             speed: 500,
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
           }}
         >
           <div>

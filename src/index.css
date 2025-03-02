@@ -47,3 +47,7 @@ body {
     -webkit-text-fill-color: transparent;
   }
 }
+
+.slick-slider .slick-slide {
+  padding: 0px 25px !important;
+}
