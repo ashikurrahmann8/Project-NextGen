@@ -1,8 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 
-function SliderComponent({ settings, children }) {
-  return <Slider {...settings}>{children}</Slider>;
+function SliderComponent({ settings, children, className }) {
+  return (
+    <Slider className={className} {...settings}>
+      {children}
+    </Slider>
+  );
 }
 
 export default SliderComponent;

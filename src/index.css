@@ -51,3 +51,7 @@ body {
 .slick-slider .slick-slide {
   padding: 0px 25px !important;
 }
+
+.slick-dots .slick-active div {
+  background-color: #d9d8e2;
+}
