@@ -7,7 +7,7 @@ import TopCreatorContainer from "../components/top creator/TopCreatorContainer";
 
 const TopCreators = () => {
   return (
-    <section className="relative z-50">
+    <section className="relative z-50 mt-[200px]">
       <Container>
         <Flex className="flex-col items-center">
           <Title title={"Top Creators"} className />

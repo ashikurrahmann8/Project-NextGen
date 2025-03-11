@@ -10,7 +10,7 @@ const Home = () => {
       <Banner />
       <Brand />
       <NFT />
-      {/* <TopCreators /> */}
+      <TopCreators />
     </>
   );
 };
