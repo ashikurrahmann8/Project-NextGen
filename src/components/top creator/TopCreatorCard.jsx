@@ -3,7 +3,7 @@ import creator1 from "../../assets/images/creator1.png";
 
 const TopCreatorCard = () => {
   return (
-    <div className=" min-w-92 bg-[#16192A]  pt-[50px] text-center rounded-xl border border-[#2E3150]">
+    <div className=" z-50 min-w-92 bg-[#16192A]  pt-[50px] text-center rounded-xl border border-[#2E3150]">
       <img
         src={creator1}
         className="w-[140px] h-[140px] object-cover mx-auto"

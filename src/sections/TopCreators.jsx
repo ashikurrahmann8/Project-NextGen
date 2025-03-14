@@ -4,10 +4,11 @@ import Container from "../components/Container";
 import Button from "../components/Button";
 import Flex from "../components/Flex";
 import TopCreatorContainer from "../components/top creator/TopCreatorContainer";
-
+import shade2 from "../assets/images/Shade 2.png";
 const TopCreators = () => {
   return (
     <section className="relative z-50 mt-[200px]">
+      <img src={shade2} className="absolute top-[-700px] right-0" />
       <Container>
         <Flex className="flex-col items-center">
           <Title title={"Top Creators"} className />
@@ -17,7 +18,7 @@ const TopCreators = () => {
           </p>
           <Button text={"View All Creators"} className="self-center" />
         </Flex>
-        <TopCreatorContainer/>
+        <TopCreatorContainer />
       </Container>
     </section>
   );
