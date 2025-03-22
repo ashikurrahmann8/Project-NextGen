@@ -6,7 +6,7 @@ import Pattern from "../assets/images/Pattern.png"
 
 const NewsLetter = () => {
   return (
-    <section className="mt-[200px] relative">
+    <section className="mt-[200px] relative ">
       <img src={Pattern} className="absolute bottom-[-312px] left-0 max-w-[528px] max-h-[490px]" />
       <Container>
         <Flex className="justify-between items-center">
