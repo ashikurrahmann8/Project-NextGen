@@ -2,7 +2,7 @@ import Container from "../components/Container";
 import Flex from "../components/Flex";
 import logo from "../assets/images/logo.png";
 import SocialMedia from "../components/SocialMedia";
-import shade3 from "../assets/images/Shade 3.png"
+import shade3 from "../assets/images/Shade 3.png";
 
 let fotterContents = [
   {
@@ -44,12 +44,15 @@ let fotterContents = [
 const Footer = () => {
   return (
     <footer className="mt-[400px] relative">
-      <img src={shade3} className="absolute z-[-50] right-[0px] top-[-816px] " />
+      <img
+        src={shade3}
+        className="absolute z-[-50] right-[0px] top-[-816px] "
+      />
       <Container>
         <Flex className="justify-between">
           <div className="w-[400px]">
-            <img src={logo} />
-            <p className="font-normal text-lg">
+            <img src={logo} className="mb-[25px]" />
+            <p className="font-normal text-lg mb-[25px]">
               Ultrices eget pretium sit euismod mi id posuere ac in in nisl sed
               augue. Posuere ac in in nisl sed augue.
             </p>
@@ -58,14 +61,14 @@ const Footer = () => {
           <Flex className="justify-evenly gap-[150px]">
             {fotterContents.map((item) => (
               <div>
-                <h2 key={item.heading} className="font-black text-[22px]">
+                <h2 key={item.heading} className="font-black text-[22px] mb-[24px]">
                   {item.heading}
                 </h2>
                 <ul>
                   {item.links.map((item2) => (
                     <li
                       key={`${item2.link} - ${item2.name}`}
-                      className="font-normal text-[19px]"
+                      className="font-normal text-[19px] mb-[15px]"
                     >
                       <a href={item2.link}>{item2.name}</a>
                     </li>
