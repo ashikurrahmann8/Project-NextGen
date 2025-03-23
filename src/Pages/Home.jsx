@@ -5,6 +5,7 @@ import TopCreators from "../sections/TopCreators";
 import NFT from "../sections/NFT";
 import NewsLetter from "../sections/NewsLetter";
 import NFTsCollection from "../sections/NFTsCollection";
+import LatestBlog from "../sections/LatestBlog";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <TopCreators />
       <NewsLetter />
       <NFTsCollection />
+      <LatestBlog/>
     </>
   );
 };
