@@ -4,6 +4,7 @@
   --color-primaryBg: #04040c;
   --font-mon: "Montserrat" serif;
   --color-secondtext: #f0f0f0;
+  --breakpoint-myXL: 1920px;
 }
 
 html,
