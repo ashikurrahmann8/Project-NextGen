@@ -1,15 +1,15 @@
+import React from "react";
+import avatarImg1 from "../assets/images/Avatar1.png";
+import avatarImg2 from "../assets/images/avatar2.png";
+import avatarImg3 from "../assets/images/avatarImg3.png";
+import nft1Img from "../assets/images/nft1.png";
+import nft2Img from "../assets/images/nft2.png";
+import nft3Img from "../assets/images/nft3.png";
+import Button from "../components/Button";
 import Container from "../components/Container";
 import Flex from "../components/Flex";
 import SliderComponent from "../components/Slider";
 import Title from "../components/Title";
-import nft1Img from "../assets/images/nft1.png";
-import nft2Img from "../assets/images/nft2.png";
-import nft3Img from "../assets/images/nft3.png";
-import React from "react";
-import Button from "../components/Button";
-import avatarImg1 from "../assets/images/Avatar1.png";
-import avatarImg2 from "../assets/images/avatar2.png";
-import avatarImg3 from "../assets/images/avatarImg3.png";
 
 const NFT = () => {
   const settings = {
@@ -27,20 +27,41 @@ const NFT = () => {
     customPaging: () => (
       <div className="w-[30px] h-[30px] bg-[#595572] rounded-full"></div>
     ),
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
-    <section className="relative z-60">
+    <section className="relative z-60 px-2 myXL:px-0">
       <Container>
         <Flex className="flex-col items-center">
-          <Title title={"Collect some NFTs"} className />
+          <Title title={"Collect some NFTs"} className="text-center" />
         </Flex>
 
         <SliderComponent className="mt-[61px]" settings={settings}>
           <div>
-            <img src={nft1Img} className="object-cover" />
+            <img src={nft1Img} className="object-cover w-full" />
             <div className="max-w-[90%] mx-auto bg-white p-[24px] rounded-[24px] -translate-y-21">
               <Flex className="flex-col">
-                <Flex className="justify-between font-extrabold text-[22px] text-primaryBg items-center">
+                <Flex className="justify-between font-extrabold text-lg xl:text-[22px] text-primaryBg items-center">
                   <h4>Lighting Axe</h4>
                   <h5>0.36 eth</h5>
                 </Flex>
@@ -58,10 +79,10 @@ const NFT = () => {
             </div>
           </div>
           <div>
-            <img src={nft2Img} className="object-cover" />
+            <img src={nft2Img} className="object-cover w-full" />
             <div className="max-w-[90%] mx-auto bg-white p-[24px] rounded-[24px] -translate-y-21">
               <Flex className="flex-col">
-                <Flex className="justify-between font-extrabold text-[22px] text-primaryBg items-center">
+                <Flex className="justify-between font-extrabold text:lg xl:text-[22px] text-primaryBg items-center">
                   <h4>Skeleton head</h4>
                   <h5>0.29 eth</h5>
                 </Flex>
@@ -79,10 +100,10 @@ const NFT = () => {
             </div>
           </div>
           <div>
-            <img src={nft3Img} className="object-cover" />
+            <img src={nft3Img} className="object-cover w-full" />
             <div className="max-w-[90%] mx-auto bg-white p-[24px] rounded-[24px] -translate-y-21">
               <Flex className="flex-col">
-                <Flex className="justify-between font-extrabold text-[22px] text-primaryBg items-center">
+                <Flex className="justify-between font-extrabold text:lg xl:text-[22px] text-primaryBg items-center">
                   <h4>Hard breath</h4>
                   <h5>0.22 eth</h5>
                 </Flex>
