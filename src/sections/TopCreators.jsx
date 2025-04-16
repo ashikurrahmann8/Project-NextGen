@@ -7,11 +7,11 @@ import TopCreatorContainer from "../components/top creator/TopCreatorContainer";
 import shade2 from "../assets/images/Shade 2.png";
 const TopCreators = () => {
   return (
-    <section className="relative z-50 mt-[200px]">
-      <img src={shade2} className="absolute top-[-700px] right-0" />
+    <section className="relative z-50 mt-[200px] myXL:px-0 px-2">
+      <img src={shade2} className="absolute top-[-700px] right-0 -z-10" />
       <Container>
         <Flex className="flex-col items-center">
-          <Title title={"Top Creators"} className />
+          <Title title={"Top Creators"} className="" />
           <p className="text-secondtext font-mon font-normal text-[19px] text-center max-w-[678px] mx-auto my-[24px]">
             In commodo auctor eget congue sit. Ultrices eget pretium sit euismod
             mi id. Risus, aliquam odio posuere ac in in nisl sed augue.{" "}
