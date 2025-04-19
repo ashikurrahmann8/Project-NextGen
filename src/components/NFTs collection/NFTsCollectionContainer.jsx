@@ -7,7 +7,7 @@ import nftC4 from "../../assets/images/nftC4.png";
 
 const NFTsCollectionContainer = () => {
   return (
-    <Flex className="gap-x-[20px]">
+    <Flex className="gap-x-[20px] flex-col lg:flex-row lg:flex-nowrap " >
       <NFTsCollectionCard nftC={nftC1} />
       <NFTsCollectionCard nftC={nftC2} />
       <NFTsCollectionCard nftC={nftC3} />

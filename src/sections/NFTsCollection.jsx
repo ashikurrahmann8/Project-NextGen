@@ -9,7 +9,7 @@ const NFTsCollection = () => {
       <Container>
         <Flex className="flex-col items-center">
           <Title title={"NFTs collections"}></Title>
-          <p className="font-normal text-[19px]">
+          <p className="font-normal text-[19px] text-center mt-3 px-1">
             Ultrices eget pretium sit euismod mi id posuere ac in in nisl sed
             augue.
           </p>

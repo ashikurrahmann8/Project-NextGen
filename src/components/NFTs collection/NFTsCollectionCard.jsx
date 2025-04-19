@@ -2,8 +2,8 @@
 
 const NFTsCollectionCard = ({nftC}) => {
   return (
-    <div className="max-w-[400px] rounded-[45%] bg-[#16192A] text-center pb-[87px]  border border-[#2E3150] mt-[60px] pt-[35px] px-[35px]">
-      <img src={nftC} className="max-w-[330px] max-h-[330px] mb-[40px] " />
+    <div className=" max-w-[400px] rounded-[300px] bg-[#16192A] text-center pb-[87px]  border border-[#2E3150] mt-[60px] pt-[35px] px-[35px]">
+      <img src={nftC} className=" mb-[40px] object-cover " />
       <h2 className="font-extrabold text-[22px] mb-[14px]">
         Broken collection
       </h2>
